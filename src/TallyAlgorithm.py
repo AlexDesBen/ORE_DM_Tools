@@ -3,10 +3,10 @@
 ####################################################################################################
 #                              %
 # Author      : Alexandre Desilets-Benoit, Ph.D. Phys.
-# Institution : Université de Montréal
+# Institution : None
 # Group       : 
-# Year        : 2015
-# Version     : 0.1
+# Year        : 2017
+# Version     : 0.2
 # function    : to fill
 #
 ####################################################################################################

@@ -4,10 +4,10 @@
 ####################################################################################################
 #                                  %
 # Author      : Alexandre Desilets-Benoit, Ph.D. Phys.
-# Institution : Université de Montréal
-# Group       : Solid State Physics (Accelerator subgroup with Prof. Sjoerd Roorda)
-# Year        : 2015
-# Version     : 0.1
+# Institution : None
+# Group       : 
+# Year        : 2017
+# Version     : 0.2
 # function    : to fill
 #
 ####################################################################################################
