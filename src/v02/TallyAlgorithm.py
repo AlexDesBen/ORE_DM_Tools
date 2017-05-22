@@ -16,9 +16,9 @@ import math
 import random as rand
 import csv
 
-from ClassExtra import *
-from ClassPerso import *
-from ClassHitLocation import *
+#from ClassExtra import *
+#from ClassPerso import *
+#from ClassHitLocation import *
 from SortAlgorithm import *
 
 def Tally(A):
