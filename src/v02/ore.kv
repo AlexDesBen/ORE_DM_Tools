@@ -1,0 +1,508 @@
+#kivy 1.9.1
+RelativeLayout:
+    Init_Page:
+        id: InitPage
+    Button:
+        size_hint: (None,None)
+        width: self.parent.width
+        height: self.parent.height-50
+        pos: 0,0+50000
+    Button:
+        size_hint: (None,None)
+        width: self.parent.width
+        height: self.parent.height-50
+        pos: 0,0+50000
+    Page_Label:
+        id: TitleBox
+        
+
+
+
+
+####################################################################################################
+####################################################################################################
+# Label over every thing
+####################################################################################################
+####################################################################################################
+
+
+<Page_Label>:
+    size_hint: (None,None)
+    size: self.parent.width,50
+    font_size: 45
+    text: 'Init menu'
+    pos: 0,self.parent.height-50
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+
+####################################################################################################
+####################################################################################################
+# Initialisation page
+####################################################################################################
+####################################################################################################
+<Init_Page>:
+    cols: 1
+    rows: 2
+    size_hint: (None,None)
+    size: self.parent.width,self.parent.height-50
+    pos: 0,0+50000
+    GridLayout:
+        cols: 2
+        rows: 1
+        GridLayout:
+            cols: 1
+            rows: 2
+            Init_Core:
+                id: Init_Core
+                size: 500,self.parent.size[1]
+                Init_One_Entry:
+                    idnbr: '1'
+                    id: FirstEntry
+                    size_hint: (None,None)
+                    pos: ColID.pos[0],ColID.pos[1]-82 + (100-VSlider1.value)*20
+                Init_One_Entry:
+                    idnbr: '2'
+                    id: Entry_2
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '3'
+                    id: Entry_3
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '4'
+                    id: Entry_4
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '5'
+                    id: Entry_5
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '6'
+                    id: Entry_6
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '7'
+                    id: Entry_7
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '8'
+                    id: Entry_8
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '9'
+                    id: Entry_9
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '10'
+                    id: Entry_10
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '11'
+                    id: Entry_11
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '12'
+                    id: Entry_12
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '13'
+                    id: Entry_13
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '14'
+                    id: Entry_14
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '15'
+                    id: Entry_15
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '16'
+                    id: Entry_16
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '17'
+                    id: Entry_17
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '18'
+                    id: Entry_18
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '19'
+                    id: Entry_19
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '20'
+                    id: Entry_20
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '21'
+                    id: Entry_21
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '22'
+                    id: Entry_22
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '23'
+                    id: Entry_23
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '24'
+                    id: Entry_24
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_One_Entry:
+                    idnbr: '25'
+                    id: Entry_25
+                    size_hint: (None,None)
+                    pos: FirstEntry.pos[0],FirstEntry.pos[1]-80*(int(self.idnbr)-1)
+                Init_Columns:
+                    id: ColID
+                    pos: self.parent.pos[0]-(HSlider1.value*15),self.parent.pos[1] + self.parent.height-130
+            Init_H_Slider:
+                id: HSlider1
+        Init_V_Slider:
+            id: VSlider1
+    Init_Menu:
+        id: ButtonBox
+
+<Init_Menu>:
+    cols: 4
+    rows: 1
+    size_hint: (None,None)
+    size: self.parent.width,50
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Init_Menu_Clear:
+        on_release: self.OnClick()
+        text: 'Clear'
+    Init_Menu_Save:
+        on_release: self.OnClick()
+        text: 'Save'
+    Init_Menu_Load:
+        on_release: self.OnClick()
+        text: 'Load'
+    Init_Menu_Start:
+        on_release: self.OnClick(app.Data)
+        text: 'Start'
+    
+<Init_V_Slider>:
+    orientation: 'vertical'
+    size_hint: (None,None)
+    size: 40,self.parent.height
+    range: 0,100
+    value: 100
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<Init_H_Slider>:
+    size_hint: (None,None)
+    size: self.parent.width,40
+    range: 0,100
+    value: 0
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<Init_Core>:
+    cols: 1
+    rows: 2
+
+<Init_Columns>:
+    size_hint: (None,None)
+    size: (5000,40)
+    cols: 16
+    rows: 1
+    spacing: 2
+    padding: 2
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Init_Col:
+        text: ' ID '
+        width: 50
+    Init_Col:
+        text: ' Active '
+        width: 80
+    Init_Col:
+        text: ' Name '
+        width: 250
+    Init_Col:
+        text: ' Nature '
+        width: 100
+    Init_Col:
+        text: ' Allied '
+        width: 75
+    Init_Col:
+        text: ' Sense '
+        width: 75
+    Init_Col:
+        text: ' Damage type '
+        width: 150
+    Init_Col:
+        text: ' LAR '
+        width: 75
+    Init_Col:
+        text: ' MAR '
+        width: 75
+    Init_Col:
+        text: ' Extra Atk '
+        width: 150
+    Init_Col:
+        text: ' Extra Spd '
+        width: 150
+    Init_Col:
+        text: ' Extra HP '
+        width: 150
+    Init_Col:
+        text: ' Units '
+        width: 75
+    Init_Col:
+        text: ' Rating '
+        width: 75
+    Init_Col:
+        text: ' Penetration '
+        width: 150
+    Init_Col:
+        text: ' Gobble dice '
+        width: 150
+
+<Init_Col>:
+    size_hint: (None,None)
+    height: self.parent.height
+    font_size: 20
+    canvas.before:
+        Color:
+            rgba: (0.3,0.3,0.3,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<Init_One_Entry>:
+    idnbr: '1'
+    status: 0
+    size_hint: (None,None)
+    size: (5000,80)
+    cols: 16
+    rows: 1
+    spacing: 2
+    padding: 2
+    canvas.before:
+        Color:
+            rgba: (0,0,0,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Init_Index:
+        id: Index
+        text: ''
+        width: 50
+    Init_Status:
+        id: Status
+        text: ''
+        width: 80
+    Init_Name:
+        id: Name
+        text: ''
+    Init_Nature:
+        id: Nature
+        text: ''
+        width: 100
+    Init_Aliegance:
+        id: Aliegance
+        text: ''
+        width: 75
+    Init_Sense:
+        id: Sense
+        text: ''
+    Init_Damage:
+        id: Damage
+        text: ''
+    Init_LAR:
+        id: LAR
+        text: ''
+    Init_MAR:
+        id: MAR
+        text: ''
+    Init_Atk:
+        id: Atk
+        text: ''
+    Init_Spd:
+        id: Spd
+        text: ''
+    Init_XTough:
+        id: XTough
+        text: ''
+    Init_Units:
+        id: Units
+        text: ''
+    Init_Rating:
+        id: Rating
+        text: ''
+    Init_Penetration:
+        id: Penetration
+        text: ''
+    Init_Gobble:
+        id: Gobble
+        text: ''
+
+<Init_Index>:
+    size_hint: (None,None)
+    width:50
+    font_size: 18
+    canvas.before:
+        Color:
+            rgba: (0.3,0.3,0.3,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+<Init_Status>:
+    size_hint: (None,None)
+    width:80
+    font_size: 18
+    canvas.before:
+        Color:
+            rgba: (0.3,0.3,0.3,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+<Init_Name>:
+    size_hint: (None,None)
+    width:250
+    font_size: 18
+    multiline: True
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,2,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,2,self.text)
+<Init_Nature>:
+    size_hint: (None,None)
+    width:100
+    font_size: 18
+    canvas.before:
+        Color:
+            rgba: (0.3,0.3,0.3,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+<Init_Aliegance>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    canvas.before:
+        Color:
+            rgba: (0.3,0.3,0.3,1)
+        Rectangle:
+            size: self.size
+            pos: self.pos
+<Init_Sense>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,5,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,5,self.text)
+<Init_Damage>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,6,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,6,self.text)
+<Init_LAR>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,7,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,7,self.text)
+<Init_MAR>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,8,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,8,self.text)
+<Init_Atk>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,9,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,9,self.text)
+<Init_Spd>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,10,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,10,self.text)
+<Init_XTough>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,11,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,11,self.text)
+<Init_Units>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,12,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,12,self.text)
+<Init_Rating>:
+    size_hint: (None,None)
+    width:75
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,13,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,13,self.text)
+<Init_Penetration>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,14,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,14,self.text)
+<Init_Gobble>:
+    size_hint: (None,None)
+    width:150
+    font_size: 18
+    on_focus: self.OnSetText(int(self.parent.idnbr)-1,15,self.text)
+    on_text: self.OnSetText(int(self.parent.idnbr)-1,15,self.text)
+
+
+
+

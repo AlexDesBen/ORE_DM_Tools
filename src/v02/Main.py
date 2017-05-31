@@ -14,6 +14,7 @@
 ####################################################################################################
 
 import kivy
+kivy.require('1.9.1')
 import math
 import random as rand
 import csv
@@ -39,45 +40,49 @@ from kivy.uix.relativelayout import RelativeLayout
 #from SortAlgorithm import *
 #from TallyAlgorithm import *
 from Character import *
+from Init_Page import *
+from OREApp import *
+from Setup_Page import *
+from Round_Page import *
+import test
 
-print(" ")
-print("test declaration")
-print "Name","Bob"
-print "Body",1
-print "Coordination",2
-print "Sense",3
-print "Mind",4
-print "Charm",5
-print "Command",6
-print "Allied",True
-print "Nbr",5
-print "Rating",3
-print "Active",True
-#(Name,Body,Coordination,Sense,Mind,Charm,Command,Allied,Nbr,Rating,Active)
-#Bob = Extra("Bob",1,2,3,4,5,6,True,5,3,True)
-#Name,Body,Coordination,Sense,Mind,Charm,Command,Allied,Active
-Bob = NPC("Bob",1,2,3,4,5,6,True,True)
-#Name,Sense,Active
-#Bob = Player("Bob",5,True)
-Bob.LAR = [0,0]
-Bob.MAR = [0,0]
-Bob.Pool = [10,0,0]
-Bob.get_info()
 
-print("test rolls")
-for i in range(0,1):
-    print(" ")
-    Bob.Roll()
-    print(Bob.Rolled)
+##############################################################################################################
+##############################################################################################################
+##############################################################################################################
+#test.perso_def()
+#test.rolls()
+#test.damage()
+##############################################################################################################
+##############################################################################################################
+##############################################################################################################
 
-print("test damage")
-print("HP  ",Bob.HP)
-print("Nbr ",Bob.Nbr)
-#S,K,Loc,Pierced=False,Engulf=False,Burn=False,Electrocute=False
-Bob.Damaged(2,0,8)
-print("HP  ",Bob.HP)
-print("Nbr ",Bob.Nbr)
-print(Bob.Rolled)
+
+
+class Page_Label(Label):
+    pass
+
+
+if __name__ == '__main__':
+    OREApp().run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 '''

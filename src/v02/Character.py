@@ -36,6 +36,13 @@ class Extra():
         self.Command = Command
         self.MaxHP = self.Rating
         self.HP = self.Rating
+        if XTough != False:
+            if type(XTough) == int:
+                self.MaxHP += XTough
+                self.HP += XTough
+            elif type(XTough) == type([]):
+                self.MaxHP += max(XTough)
+                self.HP += max(XTough)
         #LAR = Reduce S to 1 and Convert K -> S
         #Example :LAR 2 on (4S + 3K) = (3S + 1K)
         #MAR = Substract MAR from S and K
@@ -98,17 +105,14 @@ class Extra():
     def Deal_Damage(self,Damage):
         while (Damage > 0) and self.Life:
             if self.HP > Damage:
-                print("HP is bigger")
                 self.HP = self.HP - Damage
                 Damage = 0
             elif self.HP == Damage:
-                print("HP is equal")
                 self.Nbr = self.Nbr -1
                 Damage = 0
                 if self.Nbr == 0:
                     self.Killed()
             else:
-                print("HP is lower")
                 Damage = Damage-self.HP
                 self.Nbr = self.Nbr - 1
                 if self.Nbr == 0:
