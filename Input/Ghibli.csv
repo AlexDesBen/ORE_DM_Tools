@@ -1,0 +1,16 @@
+False,False,True,True,Mel,3,0,1,0,0,K,0,0
+False,False,True,True,Anelo,3,0,1,0,0,K,0,0
+True,True,False,False,Tanuki,3,10,1,0,0,K,0,0
+True,True,False,False,Facteurtrick,2,10,1,0,0,K,0,0
+True,True,False,False,VieuxChien,2,10,1,0,0,K,0,0
+True,True,False,False,PolicierTrick,2,10,1,0,0,K,0,0
+True,True,False,False,Snorlax,2,15,1,0,0,K,0,0
+True,True,False,False,Kitsune,4,10,1,0,0,K,0,1
+True,True,False,False,KamiForet,2,10,1,0,0,K,1,0
+True,True,False,False,HyperActif,2,10,1,0,0,K,0,0
+True,False,True,False,Pretre,2,0,1,0,0,K,0,0
+True,True,False,False,Vampire,2,15,1,0,0,K,0,0
+True,True,False,False,VampireSpawn,2,5,2,1,1,K,0,0
+True,False,False,False,Tete,2,5,1,0,0,K,0,0
+True,False,False,False,BrasGauche,2,5,1,0,0,K,0,0
+True,False,False,False,BraseDroit,2,5,1,0,1,K,0,0
