@@ -125,7 +125,7 @@ class LoadConfirmation():
 	def __init__(self,parent,grandparent,s):
 		self.Parent = parent
 		self.GrandParent = grandparent
-		self.TextField = TextInput(text='../../Input/data.csv',font_size = 20,bold = True,size = (200,40)\
+		self.TextField = TextInput(text='../Input/data.csv',font_size = 20,bold = True,size = (200,40)\
 			,pos_hint = {'center_x':0.5,'top':0.9},color = [0.9,0.9,0.9,1],size_hint = (0,0))
 		self.Back = Button(text='Cancel',font_size = 20,size = (75,30),pos_hint = {'x':0.1,'y':0.1},size_hint=(0,0))
 		self.Confirm = Button(text='Load',font_size = 20,size = (75,30),pos_hint = {'right':0.9,'y':0.1},size_hint=(0,0))
@@ -263,7 +263,7 @@ class SaveConfirmation():
 	def __init__(self,parent,grandparent,s):
 		self.Parent = parent
 		self.GrandParent = grandparent
-		self.TextField = TextInput(text='../../Input/SavedData.csv',font_size = 20,size = (200,40)\
+		self.TextField = TextInput(text='../Input/SavedData.csv',font_size = 20,size = (200,40)\
 			,pos_hint = {'center_x':0.5,'top':0.9},size_hint = (1,None))
 		self.Back = Button(text='Cancel',font_size = 20,size = (75,30),pos_hint = {'x':0.1,'y':0.1},size_hint=(0,0))
 		self.Confirm = Button(text='Save',font_size = 20,size = (75,30),pos_hint = {'right':0.9,'y':0.1},size_hint=(0,0))
